@@ -23,7 +23,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       sign_in(@user)
-      UserMailer.welcome_email(@user).deliver
+      # UserMailer.welcome_email(@user).deliver
       redirect_to user_path(@user.id)
     else
       flash[:error] = "Error"
@@ -33,11 +33,11 @@ class UsersController < ApplicationController
 
   def show
     # authenticate_user
-    if current_user.admin
-      @user = User.find(params[:id])
-    else
+    # if current_user.admin
+    #   @user = User.find(params[:id])
+    # else
       @user = current_user
-    end
+    # end
     @bank = Bank.new(params[:bank])
     @bank.save
     @users = User.all
