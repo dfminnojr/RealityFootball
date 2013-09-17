@@ -90,11 +90,11 @@ namespace :scrape do
           @q = game.questions[i]
           wags = @q.wagers
           wags.each do |wager|
-            if game.start_time == "FINAL" && wager.response == @q.correct_answer
+            if wager.response == @q.correct_answer
              wager.update_attributes(
               result: "true"
               )
-            elsif game.start_time == "FINAL" && wager.response != @q.correct_answer
+            elsif wager.response != @q.correct_answer
              wager.update_attributes(
               result: "false"
               )
