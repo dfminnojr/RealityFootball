@@ -1,0 +1,5 @@
+<h4>Your Games</h4>
+<% @user.games.each do |game|%>
+  <%= game.home_team %>vs.
+  <%= game.away_team  %>
+<% end %>

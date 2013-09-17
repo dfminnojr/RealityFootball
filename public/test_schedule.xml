@@ -1,0 +1,22 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<season xmlns="http://feed.elasticstats.com/schema/nfl/schedule-v1.0.xsd" season="2013" type="REG">
+  <week week="1">
+    <game id="880d99e7-8c18-4a1a-882c-e0d96e8ecf15" scheduled="2013-09-06T00:30:00+00:00" home_rotation="" away_rotation="" home="DEN" away="BAL" status="scheduled">
+      <venue id="6589e61d-ef1e-4e30-91b5-9acd2072b8a0" country="US" name="Sports Authority Field at Mile High" city="Denver " state="CO" capacity="76125" surface="turf" type="outdoor" zip="" address=""/>
+      <weather temperature="" condition="" humidity="">
+        <wind speed="" direction=""/>
+      </weather>
+      <broadcast network="NBC" satellite="" internet="" cable=""/>
+      <links>
+        <link rel="statistics" href="/2013/REG/1/BAL/DEN/statistics.xml" type="application/xml"/>
+        <link rel="summary" href="/2013/REG/1/BAL/DEN/summary.xml" type="application/xml"/>
+        <link rel="pbp" href="/2013/REG/1/BAL/DEN/pbp.xml" type="application/xml"/>
+        <link rel="boxscore" href="/2013/REG/1/BAL/DEN/boxscore.xml" type="application/xml"/>
+        <link rel="roster" href="/2013/REG/1/BAL/DEN/roster.xml" type="application/xml"/>
+        <link rel="injuries" href="/2013/REG/1/BAL/DEN/injuries.xml" type="application/xml"/>
+        <link rel="depthchart" href="/2013/REG/1/BAL/DEN/depthchart.xml" type="application/xml"/>
+      </links>
+    </game>
+  </week>
+</season>

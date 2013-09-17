@@ -1,0 +1,51 @@
+
+
+  {
+    "games": [
+      {
+      "start_time": "FINAL",
+      "home_team": "Broncos",
+      "away_team": "Ravens",
+      "score": "Broncos 34 Ravens 3",
+      "winner": "Broncos",
+      "home_score": 34,
+      "away_score": 3
+      },
+      {
+      "start_time": "FINAL",
+      "home_team": "Bills",
+      "away_team": "Patriots",
+      "score": "Patriots 31 Bills 0",
+      "winner": "Patriots",
+      "home_score": 0,
+      "away_score": 31
+      },
+      {
+      "start_time": "FINAL",
+      "home_team": "Steelers",
+      "away_team": "Titans",
+      "score": "Steelers 28 Titans 14",
+      "winner": "Steelers",
+      "home_score": 28,
+      "away_score": 14
+      },
+      {
+      "start_time": "FINAL",
+      "home_team": "Saints",
+      "away_team": "Falcons",
+      "score": "Saints 34 Falcons 31",
+      "winner": "Saints",
+      "home_score": 34,
+      "away_score": 31
+      },
+      {
+      "start_time": "FINAL",
+      "home_team": "Jets",
+      "away_team": "Buccaneers",
+      "score": "Buccaneers 14 Jets 2",
+      "winner": "Buccaneers",
+      "home_score": 2,
+      "away_score": 14
+      }
+    ]
+  }

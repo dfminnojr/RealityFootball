@@ -1,0 +1,27 @@
+<div class="row" ng-controller="UserListCtrl">
+  <div class="large-12 columns">
+    <div class="row" id="row">
+      <div class="large-4 columns hide-for-small">
+        <h4>Registered Users</h4>
+        <button type="button" class="engine"> Start Engine </button>
+        <br>
+        <button type="button" class="stop_engine"> Stop Engine </button>
+        <input class="admin-search" ng-model="search" type="text"></input>
+
+        <ol>
+          <li ng-repeat="user in users | filter:search" ng-click="showUser(user)">
+            <h6>{{user.username}}</h6>
+
+        </ol>
+      </div>
+      <div class="large-6 columns hide-for-small user-profile" ng-show="selectedUser">
+        <h2><a href="/users/{{selectedUser.id}}">{{selectedUser.username}}</a></h2>
+        <img src='{{selectedUser.picture}}'>
+        <li><a href="mailto:{{selectedUser.email}}">{{selectedUser.email}}</a></li>
+        <li>{{selectedUser.rank}}</li>
+        <li>{{selectedUser.provider}}</li>
+        <li>{{selectedUser.created_at | date}}</li>
+      </div>
+    </div>
+  </div>
+</div>

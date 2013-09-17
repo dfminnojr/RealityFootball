@@ -1,0 +1,14 @@
+$('.wager_message').html('Successful Prediction!<br><br><%= escape_javascript(link_to "View All My Predictions", "/users/#{current_user.id}/wagers") %>').fadeIn('fast');
+$('.live_quarterly_question1').hide();
+$('.live_quarterly_question2').hide();
+$('.live_quarterly_question3').hide();
+$('.live_quarterly_question4').hide();
+$('li.points').html('<%= escape_javascript(link_to current_user.bank.balance.to_s + " pts", "/users/#{current_user.id}/wagers" ) %>')
+
+
+
+$('.slider').slider({
+  max: <%= current_user.bank.balance %>
+
+})
+

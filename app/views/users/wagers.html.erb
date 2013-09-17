@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="large-12 columns">
+    <div class="row" id="row">
+      <div class="large-6 columns hide-for-small">
+        <h2>Your Predictions</h2>
+        <% @games.each do |game| %>
+          <% if game.wagers.find_by_user_id(current_user.id) != nil %>
+            <h3><%= link_to "#{game.home_team} vs. #{game.away_team}", game_path(game) %></h3>
+            <h5><%= Date.parse(game.game_date).strftime("%b. %d %Y") %></h5>
+            <% game.wagers.each do |wager| %>
+              <% if wager.user_id == current_user.id && wager.status == "active" %>
+              <h5><%= wager.question.title %></h5>
+              <h6>Your response: <%= wager.response %></h6>
+              <h6>Point wager: <%= wager.point_amount %></h6>
+              <% end %>
+            <% end %>
+          <% end %>
+        <% end %>
+
+
+      </div>
+    </div>
+  </div>
+</div>

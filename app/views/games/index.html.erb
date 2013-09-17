@@ -1,0 +1,36 @@
+
+  <div class="row" id="row">
+<h1 class="week" style="text-shadow:1px 1px 1px grey;font-family:Pathway Gothic One, sans-serif;">Games This Week</h1>
+<hr style="margin-top:0;">
+</div>
+
+
+<% @games.each do |game| %>
+ <a href="/games/<%= game.id %>">
+  <div style="font-family:Pathway Gothic One, sans-serif;" class="showdown">
+  <br>
+<h3 class="game_date" style="margin-top:0;font-family:Pathway Gothic One, sans-serif;"><%= Date.parse(game[:game_date]).strftime("%A %m/%d/%Y").upcase %></h3>
+    <h4 style="font-family:myriad;" class="team"><%= game[:home_team].upcase %></h4>
+    <%#= game[:home_score] %>
+
+    <span><strong>VS.</strong></span>
+
+    <%#= game[:away_score] %>
+    <h4 class="team"><%= game[:away_team].upcase %> »</h4>
+  <% if game.start_time != "FINAL" %>
+  <h3 class="start_time"><%= DateTime.parse(game[:game_date]).in_time_zone("Eastern Time (US & Canada)").strftime("%l:%M %p") %> EST</h3>
+  <% end %>
+  <% if game.start_time == "FINAL" %>
+  <h4> <%= game.start_time %> </h4>
+  <% end %>
+
+  <%= button_to("PREDICT THIS GAME!", {:controller => "users", :action => :open_game, :game => game}, :method => :post, :class => "button") %>
+    </div>
+  </a>
+<% end %>
+
+
+
+
+
+

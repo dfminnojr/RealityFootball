@@ -1,0 +1,144 @@
+
+
+<div class="row" id="row" data-game-id="<%= @game.id %>">
+  <div class="wager_message">Success!</div>
+
+  <div class="current_user_points">
+  <%=current_user.bank.balance%>
+  </div>
+
+</div>
+
+  <div id="game_show_info">
+
+    <div id="game_box" class="row">
+      <div class="large-12 columns">
+        <div id="featured">
+        <center>
+          <h4 style="margin:0;"><font style="font-family:myriad;" id="game_page_title"> <%= @game.home_team %> <font class="team_score"><%= @game.home_score %></font></h4>
+          <span style="font-family:Pathway Gothic One, sans-serif; font-size:40px;">VS.</span>
+          <h4 style="margin:0;"><%= @game.away_team %> <font class="team_score"><%= @game.away_score %> </font></font></h4>
+          <hr style="margin-top:0;">
+          <div id="game_date_time">
+            <strong><h4>
+              <%= Date.parse(@game[:game_date]).strftime("%A") %><br>
+
+              <%= Date.parse(@game[:game_date]).strftime("%b. %e, %Y") %><br>
+              <%= DateTime.parse(@game[:game_date]).in_time_zone("Eastern Time (US & Canada)").strftime("%l:%M %p") %> EST<br>
+
+            </h4></strong>
+        </center>
+          </div>
+      </div>
+    </div>
+
+
+
+</div>
+</div>
+<br>
+
+  <div class="test_box"></div>
+
+<div class="pre_game_divider">
+<h1 style="color:white"> Game Predictions  »</h1>
+</div>
+
+<!-- Hides pre-game bets for games that are "FINAL" -->
+<%# if @game.start_time != "FINAL" %>
+
+
+
+<br>
+<br>
+<%# if @game.start_time != "FINAL" %>
+<center><div id="pre-game_bet">
+
+  <%= form_for(@wager_1, remote: true) do |f| %>
+    <h5 ><%= @q1.title%></h5>
+    <br>
+    <ul id="who_will_win_wager_list">
+        <li>
+            <%= f.label(@q1.question_1) %>
+            <%= f.radio_button(:response, @q1.question_1 ) %>
+        </li>
+
+        <li>
+            <%= f.label(@q1.question_2) %>
+            <%= f.radio_button(:response, @q1.question_2) %>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <font style="font-size:12px;"><%= f.label("Point Wager") %></font>
+    <%= f.hidden_field(:point_amount) %>
+    <%= f.hidden_field(:user_id, :value => current_user.id) %>
+    <%= f.hidden_field(:question_id, :value => @q1.id) %>
+    <%= f.hidden_field(:game_id, :value => @game.id) %>
+    <%= f.hidden_field(:status, :value => "active") %>
+
+    <div class="wager_amount1" name="wager[point_amount]">0</div>
+    <div id="1" class="slider"></div>
+    <br>
+    <%= f.button "Predict", :confirm => "Are you sure that you would like to this wager?" %>
+  <% end %>
+
+<h3><hr></h3>
+
+  <%= form_for(@wager_2, remote: true) do |f| %>
+    <h5><%= @q2.title %></h5>
+    <div id="pre-game-select">
+        <%= f.select(:response, options_for_select([['Select', 'Select'], [@q2.question_1, (0..6)], [@q2.question_2, (7..13)], [@q2.question_3, (14..20)], [@q2.question_4, (21..29)], [@q2.question_5, (30..35)], [@q2.question_6, (36..100)]]), {:size => '10px'}) %>
+          </div>
+    <br>
+    <font style="font-size:12px"><%= f.label("Point Wager") %></font>
+    <%= f.hidden_field(:point_amount) %>
+    <%= f.hidden_field(:user_id, :value => current_user.id) %>
+    <%= f.hidden_field(:question_id, :value => @q2.id) %>
+    <%= f.hidden_field(:game_id, :value => @game.id) %>
+    <%= f.hidden_field(:status, :value => "active") %>
+
+    <div class="wager_amount2" name="wager[point_amount]">0</div>
+    <div id="2" class="slider"></div>
+    <br>
+    <%= f.button "Predict", :confirm => "Are you sure that you would like to this wager?" %>
+  <% end %>
+
+<hr>
+
+  <%= form_for(@wager_3, remote: true) do |f| %>
+    <h5><%= @q3.title %></h5>
+          <div id="pre-game-select">
+            <%= f.select(:response, options_for_select([['Select', 'Select'], [@q3.question_1, (0..6)], [@q3.question_2, (7..13)], [@q3.question_3, (14..20)], [@q3.question_4, (21..29)], [@q3.question_5, (30..35)], [@q3.question_6, (36..100)]]), {:size => '10px'}) %>
+          </div>
+    <br>
+    <font style="font-size:12px"><%= f.label("Point Wager") %></font>
+    <%= f.hidden_field(:point_amount) %>
+    <%= f.hidden_field(:user_id, :value => current_user.id) %>
+    <%= f.hidden_field(:question_id, :value => @q3.id) %>
+    <%= f.hidden_field(:game_id, :value => @game.id) %>
+    <%= f.hidden_field(:status, :value => "active") %>
+
+    <div class="wager_amount3" name="wager[point_amount]">0</div>
+    <div id="3" class="slider"></div>
+    <br>
+    <%= f.button "Predict", :confirm => "Are you sure that you would like to this wager?" %>
+  <% end %>
+</div>
+<%# end %>
+
+
+    <% if @game.start_time != "FINAL" %>
+<div id="wager_warning">
+    <h3 style="color:blue;font-family:myriad"> CLICK ABOVE TO MAKE PREDICTIONS ON THIS GAME! </h3>
+</div>
+    <% elsif @game.start_time == "FINAL" %>
+<div id="wager_warning_two">
+    <h3 style="color:red;font-family:myriad"> GAME IS OVER. ALL PREDICTIONS ARE CLOSED. </h3>
+</div>
+    <% end %>
+
+
+
+
+<hr>

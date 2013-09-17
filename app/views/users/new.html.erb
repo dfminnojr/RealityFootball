@@ -1,0 +1,25 @@
+<center><div id="signin_page" style="width:0 auto">
+<div id="signup_form">
+  <h2> Sign Up </h2>
+  <%= form_for(@user) do |f| %>
+    <%= f.text_field :username, :value=>"",:placeholder => "Username", :autofocus => true%>
+    <br>
+    <%= f.email_field :email, :value=>"",:placeholder => "your@email.com"%>
+    <br>
+    <%= f.password_field :password, :value=>"",:placeholder => "Password" %>
+    <br>
+    <%= f.password_field :password_confirmation, :value=>"",:placeholder => "Password Confirmation" %>
+    <br>
+    <br>
+    <div id='new_user_avatar_upload'>
+    <%= f.hidden_field :picture, :value => 'http://www.artifacting.com/blog/wp-content/uploads/2010/11/MST3K_Mike-150x126.jpg' %>
+    </div>
+    <%# f.hidden_field :point_amount, :value => 1000 %>
+    <%= f.hidden_field :rank, :value => "Pop Warner" %>
+    <br>
+    <%= f.button "Sign up" %>
+
+  <% end %>
+</div>
+</div></center>
+

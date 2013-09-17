@@ -1,0 +1,180 @@
+<div class="row">
+<div class="row" id="row">
+<div class="large-4 columns hide-for-small">
+<div id="featured">
+<% if current_user %>
+    <h2 style="font-family:Pathway Gothic One, sans-serif;"><%= @user.username.capitalize %></h2>
+      <ul>
+        <li>
+          <div id="user_profile_pic">
+            <%= image_tag image_selector(@user) %>
+          </div>
+        </li>
+        <li>
+          <div id="camera_icon">
+            <%= image_tag '/assets/camera.png' %>
+          </div>
+          <div id="pic_upload">
+            <%= form_for @user, :url => user_path(@user), :html => { :multipart => true } do |form| %>
+              <%= form.file_field :avatar %><br>
+              <%= form.button "Upload picture" %>
+            <% end %>
+          </div>
+        </li>
+</div>
+</div>
+
+<div class="large-8 columns hide-for-small">
+  <div id="featured_middle">
+    <h3> Ranking: </h4>
+      <% if @user.bank %>
+        <h2 style="text-shadow: 0 0 2px grey;"><%= @user.bank.rank %></h2>
+      <hr>
+          <strong><h3> Points: </h4></strong>
+          <center>
+            <h2><%= @user.bank.balance %><font style="font-size:15px;">pts</font></h2>
+          </center>
+        <% else %>
+        <br>
+        <br>
+        <br>
+          <%= form_for(@bank, :url => user_path, :method => 'get') do |f| %>
+            <%= f.hidden_field :balance, :value => 1000 %>
+            <%= f.hidden_field :total_point_amount, :value => 1000 %>
+            <%= f.hidden_field :user_id, :value => current_user.id %>
+            <%= f.hidden_field :rank, :value => "Pop Warner" %>
+
+            <center><%= f.button "Claim My Free Points!" %></center>
+          <% end %>
+
+        <% end %>
+  </div>
+</div>
+
+<strong><hr id="user_hr"></strong>
+
+    <div id="user_profile_bottom" class="row">
+      <div class="large-12 columns">
+        <div class="row">
+          <!-- Shows -->
+          <div class="large-4 small-6 columns">
+            <!-- <h4>Leaderboard</h4><hr>
+              <ol style="padding-left: 2em;">
+                <%# @user_info[0,6].each do |user| %>
+                 <li id="leaderboard_username"><strong><%# user.username %>: </strong>
+                  <%# user.point_amount %><em><font style="font-size:10px;">pts</font></em></li>
+                  <hr>
+                  <%# end %>
+              </ol> -->
+          </div>
+
+<div class="large-4 small-12 columns">
+  <h2>Upcoming Games</h3><hr>
+  <% @upcoming_games[0,4].each do |game| %>
+    <div class="panel">
+      <h5>
+        <a href="/games/<%= game.id %>"><%= game[:home_team] %> vs <%= game[:away_team] %> »</a>
+      </h5>
+      <h6 class="subheader">
+        <%= Date.parse(game[:game_date]).strftime("%m/%d/%Y") %>
+      </h6>
+    </div>
+  <% end %>
+</div>
+
+<div class="large-7 small-6 columns">
+  <center><h2> Wagers</h3></center>
+  <center>
+    <ul id="wager-bar">
+      <li id="one"><h6> Active </h6></li>
+      <li id="two"><h6> History </h6></li>
+    </ul>
+  </center>
+
+<hr style="margin-top:0;">
+
+<div id="user_active_wagers">
+  <% if @user.wagers %>
+    <div id="accordion">
+      <% @games.each do |game| %>
+        <% if game.wagers.find_by_user_id(@user.id) != nil %>
+          <% if game.wagers.find_by_status("active") %>
+            <h5 id="block">
+              <font style="font-size:16px; opacity:0.6; margin-left: 1em; margin-right:6em;"> <%= Date.parse(game[:game_date]).strftime("%A") %>:</font><%= game.home_team %> vs. <%= game.away_team %>
+            </h5>
+            <div>
+              <% game.wagers.reverse.each do |wager| %>
+                <% if wager.user_id == @user.id && wager.status == "active" %>
+                  <center><h6 style="margin-bottom:0;"><%= wager.question.title %></h6></center>
+                  <blockquote><u><strong>My Prediction</u>:</strong>
+                  <br>
+                  <%= wager.response %>
+                  <br>
+                  <u><strong>Wager amount</u>:</strong><br><%= wager.point_amount %> pts
+                  <br>
+                  <hr></blockquote>
+                <% end %>
+              <% end %>
+              <center><a href="/games/<%= game.id %>" style="color:#2795b6;"> Game Page  »</a></center>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+<br>
+
+        <!--- Wager History -->
+
+<div id="user_completed_wagers">
+  <% if current_user.wagers %>
+    <div id="accordion_two">
+      <% @games.each do |game| %>
+        <% if game.wagers.find_by_user_id(current_user.id) != nil %>
+          <% if game.wagers.find_by_status("completed") %>
+            <h5 id="block">
+              <center><%= game.home_team %> vs. <%= game.away_team %>:
+                <font style="font-size:17px; opacity:0.6;"> <%= Date.parse(game[:game_date]).strftime("%m/%d/%Y") %></font></center>
+            </h5>
+            <div>
+              <% game.wagers.reverse.each do |wager| %>
+                <% if wager.user_id == current_user.id && wager.status == "completed" %>
+                  <center><h6 style="margin-bottom:0;"><%= wager.question.title %></h6>
+                    <% if wager.result == "true" %>
+                      </strong><font style="color:red">
+                        Winner!
+                      </font></center></strong>
+                    <% elsif wager.result == "false" %>
+                      </strong><center><font style="color:red">
+                        Better luck next time!
+                      </font></center></strong>
+                    <% else %>
+                      <%= nil %>
+                    <% end %>
+                    <blockquote><u><strong>My Prediction</u>:</strong>
+                      <br><%= wager.response %>
+                      <br>
+                      <u><strong>Correct Answer</u>:</strong>
+                      <%= wager.question.correct_answer %>
+                      <br>
+                      <u><strong>Wager amount</u>:</strong><br><%= wager.point_amount %> pts
+                      <br>
+                      <hr>
+                    </blockquote>
+                <% end %>
+              <% end %>
+              <center><a href="/games/<%= game.id %>" style="color:#2795b6;"> Game Page  »</a></center>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+</div>
+<% end %>
+</div>
+</div>
+</div>

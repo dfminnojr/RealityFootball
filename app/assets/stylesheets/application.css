@@ -1,0 +1,546 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+.test_box{
+  height: 400px;
+  width: 400px;
+  background-color: red;
+  display: none;
+  position: fixed;
+  right: 40%;
+  bottom: 20%;
+}
+
+li{
+  list-style-type: none;
+ }
+
+
+
+.wager_info {
+  margin: 10px 0;
+}
+
+.wager_info h5{
+  margin: 0;
+  font-size: 14px;
+}
+
+h1.week{
+  font-size: 50px;
+  margin: 0;
+}
+
+h3.game_date, h3.start_time{
+  text-align: center;
+}
+
+h4.team{
+  font-size: 60px;
+  display: inline;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+div.showdown{
+  margin: 0 auto;
+  text-align: center;
+  border:2px solid  #2c3e50;
+  margin-right: 4em;
+  margin-left: 4em;
+  background-color: white;
+  box-shadow: 1px 1px 10px grey;
+}
+div.showdown:hover{
+  box-shadow: 1px 1px 35px grey;
+  opacity: 1;
+
+}
+
+input.button {
+  width: 200px;
+}
+
+.button_to div{
+  text-align: center;
+}
+
+input#wager_point_amount{
+  text-align: center;
+}
+
+div.wager_amount{
+  margin-bottom: 10px;
+}
+
+.slider{
+  width: 30%;
+  margin: 10px auto;
+}
+
+div.current_user{
+  background-color: #2c3e50;
+  color: white;
+  position: fixed;
+  right: 0;
+  width: 20%;
+  padding: 1%;
+  box-shadow: 0px 0px 1px 0px #7f8c8d;
+  z-index: 5;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+
+div.current_user h4, div.current_user h5{
+  color: white;
+  font-size: 14px;
+}
+
+div.current_user h5{
+  display: inline;
+}
+
+div.current_user_points{
+  display: none;
+}
+
+ul#who_will_win_wager_list{
+  margin: 0;
+}
+
+
+#leaderboard_username{
+  color:#2c3e50;
+}
+#block.ui-accordion-header:hover{
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+#block.ui-accordion-header:active{
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+
+#accordion a:hover{
+  text-decoration: underline;
+}
+
+#signin_page{
+  padding-top: 5em;
+}
+#signin_page h2{
+font-family:myriad;
+}
+
+.nav_username{
+  min-width: 6em;
+  text-align: center;
+}
+
+#wager-bar{
+display: inline-block;
+}
+#wager-bar li h6{
+  color:white;
+}
+#wager-bar li{
+  color:white;
+  display:block;
+  float:left;
+  padding: 0 2.4em;
+  border:1px solid black;
+  background-color: #2c3e50;
+}
+
+
+#wager-bar #one{
+
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  box-shadow: 0px 1px 4px grey;
+}
+#wager-bar #two{
+
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  opacity: 0.4;
+}
+
+#wager-bar li:hover{
+  cursor: pointer;
+}
+#wager-bar li:active{
+  opacity:0.8;
+  border-top:2px solid black;
+  border-left: 2px solid black;
+  padding-bottom: -1px;
+
+}
+
+#user_completed_wagers{
+  display: none;
+}
+
+.wager_message{
+  text-align: center;
+  background-color: #2c3e50;
+  height: 40%;
+  width: 40%;
+  color: white;
+  position: fixed;
+  left: 30%;
+  top: 30%;
+  z-index: 5;
+  font-size: 40px;
+  opacity: 0.9;
+  display: none;
+  border-radius: 4px;
+  border: 4px solid black;
+  box-shadow: 0 0 25px grey;
+  padding: 0.5em;
+  font-family: 
+}
+.wager_message a{
+  color:white;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.wager_message a:hover{
+  color:white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#camera_icon{
+padding-bottom:4px;
+padding-right: 2px;
+padding-left: 2px;
+margin-top: 0px;
+margin-bottom: 5px;
+position:relative;
+float:top;
+padding-top: 0;
+border-radius: 2px;
+z-index: 2;
+border: 1px solid #f2f2f2;
+}
+#camera_icon:hover {
+  cursor: pointer;
+  border: 1px solid #2c3e50;
+}
+
+
+#pic_upload{
+font-size: 17px;
+position: absolute;
+background-color: #fafbfb;
+margin-top: 0;
+margin-bottom: 0px;
+margin-left: 0.5em;
+border: 2px solid #BDBDBD;
+width: 15em;
+text-align: center;
+padding-top: 0.7em;
+padding-left: 0.5em;
+padding-right: 0;
+border-radius: 4px;
+z-index: 4;
+display:none;
+
+}
+#pic_upload:after, #pic_upload:before {
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  right: 100%;
+  position: absolute;
+  width: 0;
+  }
+#pic_upload:after {
+  border-width: 9px;
+  border-right-color: #fafbfb;
+  top: 15px;
+}
+#pic_upload:before{
+  border-width: 14px;
+  border-right-color: #BDBDBD;
+  right:100%;
+  top: 10px;
+}
+
+
+#user_profile_pic img{
+  max-height: 10.6em;
+  max-width: 12em;
+  border: 1px solid #BDBDBD;
+  padding: 5px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+
+
+.user-profile img{
+  height: 70px;
+  width: 70px;
+
+}
+
+#user_rank_list{
+margin-bottom: 0;
+}
+#user_rank_list li{
+  width: 0 auto;
+  text-align: center;
+  display:block;
+  float:left;
+  margin-left: 1em;
+}
+#user_rank_list img{
+position:relative;
+float:right;
+}
+
+#featured ul li{
+  display:block;
+  float:left;
+  margin-right: 2px;
+}
+
+#featured h4{
+  display: inline;
+  font-size: 20px;
+}
+#featured h2{
+  margin-bottom: 0;
+}
+#featured_middle{
+text-align: center;
+margin-bottom: 0;
+}
+#featured_middle ul{
+display:inline-block;
+}
+#featured_middle h3{
+  text-align: left;
+  margin-bottom: 0;
+  font-family:Pathway Gothic One, sans-serif;
+  color:grey;
+}
+#featured_middle h2{
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+  font-size:60px;
+  font-family:myriad;
+}
+
+html, body {
+  background: #f2f2f2;;
+}
+
+.live_quarterly_question1{
+  background-color: #2c3e50;
+  height: 45%;
+  width: 40%;
+  color: white;
+  position: fixed;
+  left: 30%;
+  top: 30%;
+  z-index: 5;
+  text-align: center;
+  opacity: 0.95;
+  border-radius: 4px;
+  border: 2px solid grey;
+  box-shadow: 1px 1px 3px grey;
+  display:none;
+}
+
+.live_quarterly_question1 label{
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.live_quarterly_question1 ul{
+  width: 66px;
+  margin: 0 auto;
+}
+
+.live_quarterly_question1 ul li{
+  float: left;
+  margin-right: 20px;
+  line-height: 1em;
+
+}
+
+.live_quarterly_question1 ul li:nth-child(2){
+  margin-right: 0;
+}
+
+.live_quarterly_question2{
+  background-color: #2c3e50;
+  height: 45%;
+  width: 40%;
+  color: white;
+  position: fixed;
+  left: 30%;
+  top: 30%;
+  z-index: 5;
+  text-align: center;
+  opacity: 0.95;
+  border-radius: 4px;
+  border: 2px solid grey;
+  box-shadow: 1px 1px 3px grey;
+  display:none;
+}
+
+.live_quarterly_question2 label{
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.live_quarterly_question2 ul{
+  width: 66px;
+  margin: 0 auto;
+}
+
+.live_quarterly_question2 ul li{
+  float: left;
+  margin-right: 20px;
+  line-height: 1em;
+
+}
+
+.live_quarterly_question2 ul li:nth-child(2){
+  margin-right: 0;
+}
+
+.live_quarterly_question3{
+  background-color: #2c3e50;
+  height: 45%;
+  width: 40%;
+  color: white;
+  position: fixed;
+  left: 30%;
+  top: 30%;
+  z-index: 5;
+  text-align: center;
+  opacity: 0.95;
+  border-radius: 4px;
+  border: 2px solid grey;
+  box-shadow: 1px 1px 3px grey;
+  display:none;
+}
+
+.live_quarterly_question3 label{
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.live_quarterly_question3 ul{
+  width: 66px;
+  margin: 0 auto;
+}
+
+.live_quarterly_question3 ul li{
+  float: left;
+  margin-right: 20px;
+  line-height: 1em;
+
+}
+
+.live_quarterly_question3 ul li:nth-child(2){
+  margin-right: 0;
+}
+
+.live_quarterly_question4{
+  background-color: #2c3e50;
+  height: 45%;
+  width: 40%;
+  color: white;
+  position: fixed;
+  left: 30%;
+  top: 30%;
+  z-index: 5;
+  text-align: center;
+  opacity: 0.95;
+  border-radius: 4px;
+  border: 2px solid grey;
+  box-shadow: 1px 1px 3px grey;
+  display:none;
+}
+
+.live_quarterly_question4 label{
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.live_quarterly_question4 ul{
+  width: 66px;
+  margin: 0 auto;
+}
+
+.live_quarterly_question4 ul li{
+  float: left;
+  margin-right: 20px;
+  line-height: 1em;
+
+}
+
+.live_quarterly_question4 ul li:nth-child(2){
+  margin-right: 0;
+}
+
+.team_score{
+  font-size: 50px;
+  border: 2px solid black;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  box-shadow: 0 0 4px grey;
+}
+
+#wager_warning{
+  text-align: center;
+}
+#wager_warning_two{
+  text-align: center;
+}
+
+#game_box{
+margin-right: 0;
+margin-left: 0;
+max-width: 100%;
+}
+
+#user_profile_bottom h2{
+  font-family:Pathway Gothic One, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  color:grey;
+}
+
+
+
+
+
+
+
+

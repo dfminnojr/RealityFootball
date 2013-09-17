@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generation started at Fri Aug 09 20:00:35 +0000 2013 -->
+<game xmlns="http://feed.elasticstats.com/schema/nfl/boxscore-v1.0.xsd" id="2158cc5b-8a73-4b57-b94e-11d4924653f6" scheduled="2013-08-08T23:30:00+00:00" home="TB" away="BAL" status="closed" quarter="4" clock=":00" completed="2013-08-09T02:49:23+00:00">
+  <team id="TB" name="Buccaneers" market="Tampa Bay" remaining_challenges="2" remaining_timeouts="2">
+    <scoring points="16">
+      <quarter number="1" points="3"/>
+      <quarter number="2" points="10"/>
+      <quarter number="3" points="3"/>
+      <quarter number="4" points="0"/>
+    </scoring>
+  </team>
+  <team id="BAL" name="Ravens" market="Baltimore" remaining_challenges="1" remaining_timeouts="2">
+    <scoring points="44">
+      <quarter number="1" points="0"/>
+      <quarter number="2" points="24"/>
+      <quarter number="3" points="7"/>
+      <quarter number="4" points="13"/>
+    </scoring>
+  </team>
+  <scoring_drives>
+    <drive sequence="1" clock="10:05" quarter="1" team="TB">
+      <score type="fieldgoal" clock="04:14" quarter="1" points="3">
+        <summary>
+          <![CDATA[3-D.Dimke 29 yards Field Goal is Good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/c407a4f6-a61b-44f4-b4e1-fd6827a447b4.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="2" clock=":25" quarter="1" team="TB">
+      <score type="fieldgoal" clock="12:39" quarter="2" points="3">
+        <summary>
+          <![CDATA[3-D.Dimke 35 yards Field Goal is Good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/ea0a6b1a-cc3e-4fca-9a67-79860e2ddf77.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="3" clock="12:34" quarter="2" team="BAL">
+      <score type="touchdown" clock="10:42" quarter="2" points="6">
+        <summary>
+          <![CDATA[30-B.Pierce runs 20 yards for a touchdown.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/c1819a85-9bb3-46e8-b79e-efc6f08db595.xml" type="application/xml"/>
+        </links>
+      </score>
+      <score type="extrapoint" clock="10:34" quarter="2" points="1">
+        <summary>
+          <![CDATA[9-J.Tucker extra point is good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/4c0f5775-9fd2-4517-801b-2ebdd09427e5.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="4" clock="07:02" quarter="2" team="TB">
+      <score type="touchdown" clock="05:31" quarter="2" points="6">
+        <summary>
+          <![CDATA[30-B.Leonard runs 3 yards for a touchdown.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/d73a0199-8a13-4f0d-a4e5-148f225d83d7.xml" type="application/xml"/>
+        </links>
+      </score>
+      <score type="extrapoint" clock="05:25" quarter="2" points="1">
+        <summary>
+          <![CDATA[3-D.Dimke extra point is good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/565263d1-4fc2-4d7d-89ec-ada726967c78.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="5" clock="05:25" quarter="2" team="BAL">
+      <score type="fieldgoal" clock="03:31" quarter="2" points="3">
+        <summary>
+          <![CDATA[9-J.Tucker 43 yards Field Goal is Good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/96cffc1f-6c80-442c-a676-ed2f58fe1a66.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="6" clock="02:13" quarter="2" team="BAL">
+      <score type="touchdown" clock=":39" quarter="2" points="6">
+        <summary>
+          <![CDATA[35-A.Allen runs 2 yards for a touchdown.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/b9b7147e-2616-494d-808a-2a6b9cdcb0da.xml" type="application/xml"/>
+        </links>
+      </score>
+      <score type="extrapoint" clock=":34" quarter="2" points="1">
+        <summary>
+          <![CDATA[9-J.Tucker extra point is good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/70c7351d-26d2-48df-932f-6d2384cb5426.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="7" clock=":34" quarter="2" team="TB">
+      <score type="touchdown" clock=":13" quarter="2" points="6">
+        <summary>
+          <![CDATA[7-C.Henry punts 0 yards from TB 11 blocked by 28-B.Trawick. 15-L.Williams runs no gain for a touchdown.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/93c13d99-377b-483f-8493-85025d305a9f.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="8" clock=":09" quarter="2" team="BAL">
+      <score type="extrapoint" clock=":09" quarter="2" points="1">
+        <summary>
+          <![CDATA[9-J.Tucker extra point is good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/9c383d0f-45e9-43e0-8554-aa245cac27fd.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="9" clock=":00" quarter="3" team="BAL">
+      <score type="touchdown" clock="11:19" quarter="3" points="6">
+        <summary>
+          <![CDATA[2-T.Taylor complete to 15-L.Williams. 15-L.Williams runs 21 yards for a touchdown.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/7e8b6f3c-7fca-47b9-bebc-aa3f421cc056.xml" type="application/xml"/>
+        </links>
+      </score>
+      <score type="extrapoint" clock="11:09" quarter="3" points="1">
+        <summary>
+          <![CDATA[9-J.Tucker extra point is good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/e8b58d56-8457-4642-b3f4-88caa085a47a.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="10" clock="05:44" quarter="3" team="TB">
+      <score type="fieldgoal" clock=":29" quarter="3" points="3">
+        <summary>
+          <![CDATA[3-D.Dimke 45 yards Field Goal is Good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/9604aaa1-d7db-4f41-9968-453394980cdc.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="11" clock="14:20" quarter="4" team="BAL">
+      <score type="fieldgoal" clock="12:47" quarter="4" points="3">
+        <summary>
+          <![CDATA[9-J.Tucker 29 yards Field Goal is Good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/f519e8fa-be65-48ae-b690-f8eadca2f1d4.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="12" clock="11:00" quarter="4" team="BAL">
+      <score type="touchdown" clock="08:10" quarter="4" points="6">
+        <summary>
+          <![CDATA[2-T.Taylor complete to 13-A.Mellette. 13-A.Mellette runs 21 yards for a touchdown.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/fc626c16-4140-47d2-9284-7052ebe38f7d.xml" type="application/xml"/>
+        </links>
+      </score>
+      <score type="extrapoint" clock="08:02" quarter="4" points="1">
+        <summary>
+          <![CDATA[9-J.Tucker extra point is good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/ed8044ea-d032-4844-9b3a-419dc33eafef.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="13" clock="06:30" quarter="4" team="BAL">
+      <score type="fieldgoal" clock="01:54" quarter="4" points="3">
+        <summary>
+          <![CDATA[9-J.Tucker 57 yards Field Goal is Good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/1761a560-4671-422a-8e31-431cf42d4463.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+  </scoring_drives>
+</game>
+<!-- Generation finished at Fri Aug 09 20:00:35 +0000 2013 -->

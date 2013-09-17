@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generation started at Fri Aug 09 20:00:37 +0000 2013 -->
+<game xmlns="http://feed.elasticstats.com/schema/nfl/extended-boxscore-v1.0.xsd" id="2158cc5b-8a73-4b57-b94e-11d4924653f6" scheduled="2013-08-08T23:30:00+00:00" home="TB" away="BAL" status="closed" quarter="3" clock=":00" completed="2013-08-09T02:49:23+00:00">
+  <team id="TB" name="Buccaneers" market="Tampa Bay" remaining_challenges="2" remaining_timeouts="2">
+    <scoring points="16">
+      <quarter number="1" points="3"/>
+      <quarter number="2" points="10"/>
+      <quarter number="3" points="3"/>
+      <quarter number="4" points="0"/>
+    </scoring>
+    <leaders>
+      <passing>
+        <player id="e1235f1e-26ce-438c-8168-3b1ded4ab893" name="Mike Glennon" jersey="8" position="QB" att="23" cmp="11" yds="169" lg="61" sk="1" sk_yds="9.0" td="0" int="1" int_td="0" fd="5" sfty="0" rz_att="2" rating="54.4" avg="7.348" cmp_pct="47.826" cmp_avg="15.364" td_pct="0.0" int_pct="4.348" yds_10_pls="2" yds_20_pls="1" yds_30_pls="0" yds_40_pls="1" yds_50_pls="1"/>
+        <player id="8c7cd76d-74a0-4440-885a-07f92f9a75d7" name="Josh Freeman" jersey="5" position="QB" att="7" cmp="4" yds="34" lg="22" sk="1" sk_yds="8.0" td="0" int="0" int_td="0" fd="1" sfty="0" rz_att="2" rating="69.9" avg="4.857" cmp_pct="57.143" cmp_avg="8.5" td_pct="0.0" int_pct="0.0" yds_10_pls="0" yds_20_pls="1" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      </passing>
+      <rushing>
+        <player id="b3f527c8-5744-4751-8f54-1677fbb32aca" name="Brian Leonard" jersey="30" position="RB" att="6" yds="23" avg="3.833" lg="13" td="1" fd="3" fd_pct="50.0" sfty="0" rz_att="3" fum="0" yds_10_pls="1" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+        <player id="c442ca48-a25a-476d-a74f-dd7bf18551e9" name="Mike James" jersey="25" position="RB" att="6" yds="15" avg="2.5" lg="4" td="0" fd="1" fd_pct="16.667" sfty="0" rz_att="0" fum="0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      </rushing>
+      <receiving>
+        <player id="5649ae74-aac1-433f-8f0f-ea812a285fac" name="Kevin Ogletree" jersey="85" position="WR" tar="8" rec="5" yds="65" yac="63" fd="3" avg="13.0" td="0" lg="22" rz_tar="1" fum="0" yds_10_pls="1" yds_20_pls="2" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+        <player id="93fa7b69-04f5-4251-906d-d943c4923cb8" name="Tom Crabtree" jersey="84" position="TE" tar="1" rec="1" yds="61" yac="61" fd="1" avg="61.0" td="0" lg="61" rz_tar="0" fum="0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="1"/>
+      </receiving>
+    </leaders>
+    <possession time="30:32"/>
+  </team>
+  <team id="BAL" name="Ravens" market="Baltimore" remaining_challenges="1" remaining_timeouts="2">
+    <scoring points="44">
+      <quarter number="1" points="0"/>
+      <quarter number="2" points="24"/>
+      <quarter number="3" points="7"/>
+      <quarter number="4" points="13"/>
+    </scoring>
+    <leaders>
+      <passing>
+        <player id="7f3ef024-eb34-46af-8b9e-544cdf09378f" name="Tyrod Taylor" jersey="2" position="QB" att="23" cmp="13" yds="154" lg="24" sk="0" sk_yds="0.0" td="2" int="0" int_td="0" fd="9" sfty="0" rz_att="2" rating="106.1" avg="6.696" cmp_pct="56.522" cmp_avg="11.846" td_pct="8.696" int_pct="0.0" yds_10_pls="5" yds_20_pls="3" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+        <player id="64797df2-efd3-4b27-86ee-1d48f7edb09f" name="Joe Flacco" jersey="5" position="QB" att="9" cmp="7" yds="57" lg="14" sk="1" sk_yds="10.0" td="0" int="1" int_td="0" fd="3" sfty="0" rz_att="0" rating="53.5" avg="6.333" cmp_pct="77.778" cmp_avg="8.143" td_pct="0.0" int_pct="11.111" yds_10_pls="3" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      </passing>
+      <rushing>
+        <player id="b56605a8-0cf6-4f16-a963-0329433d3266" name="Damien Berry" jersey="28" position="RB" att="9" yds="31" avg="3.444" lg="14" td="0" fd="1" fd_pct="11.111" sfty="0" rz_att="1" fum="0" yds_10_pls="1" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+        <player id="8d5938a7-d605-4695-b029-cc0b0e7a7f18" name="Anthony Allen" jersey="35" position="RB" att="8" yds="27" avg="3.375" lg="6" td="1" fd="2" fd_pct="25.0" sfty="0" rz_att="1" fum="0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      </rushing>
+      <receiving>
+        <player id="59c39afc-99b0-40d7-8613-f8357ea4b083" name="LaQuan Williams" jersey="15" position="WR" tar="4" rec="2" yds="32" yac="32" fd="2" avg="16.0" td="1" lg="21" rz_tar="0" fum="0" yds_10_pls="1" yds_20_pls="1" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+        <player id="ffec1b11-6b1b-482d-86f0-3bf4f6391dbf" name="Marlon Brown" jersey="14" position="WR" tar="4" rec="2" yds="31" yac="49" fd="2" avg="15.5" td="0" lg="19" rz_tar="1" fum="0" yds_10_pls="2" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      </receiving>
+    </leaders>
+    <possession time="29:28"/>
+  </team>
+  <possession team="BAL" side="BAL" yard_line="29" down="2" yfd="11"/>
+  <last_event>
+    <event clock=":00" type="gameover" sequence="200" updated="2013-08-09T02:49:23+00:00">
+      <summary>End of Game</summary>
+    </event>
+  </last_event>
+  <scoring_drives>
+    <drive sequence="1" clock="10:05" quarter="1" team="TB">
+      <score type="fieldgoal" clock="04:14" quarter="1" points="3">
+        <summary>
+          <![CDATA[3-D.Dimke 29 yards Field Goal is Good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/c407a4f6-a61b-44f4-b4e1-fd6827a447b4.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="2" clock=":25" quarter="1" team="TB">
+      <score type="fieldgoal" clock="12:39" quarter="2" points="3">
+        <summary>
+          <![CDATA[3-D.Dimke 35 yards Field Goal is Good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/ea0a6b1a-cc3e-4fca-9a67-79860e2ddf77.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="3" clock="12:34" quarter="2" team="BAL">
+      <score type="touchdown" clock="10:42" quarter="2" points="6">
+        <summary>
+          <![CDATA[30-B.Pierce runs 20 yards for a touchdown.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/c1819a85-9bb3-46e8-b79e-efc6f08db595.xml" type="application/xml"/>
+        </links>
+      </score>
+      <score type="extrapoint" clock="10:34" quarter="2" points="1">
+        <summary>
+          <![CDATA[9-J.Tucker extra point is good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/4c0f5775-9fd2-4517-801b-2ebdd09427e5.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="4" clock="07:02" quarter="2" team="TB">
+      <score type="touchdown" clock="05:31" quarter="2" points="6">
+        <summary>
+          <![CDATA[30-B.Leonard runs 3 yards for a touchdown.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/d73a0199-8a13-4f0d-a4e5-148f225d83d7.xml" type="application/xml"/>
+        </links>
+      </score>
+      <score type="extrapoint" clock="05:25" quarter="2" points="1">
+        <summary>
+          <![CDATA[3-D.Dimke extra point is good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/565263d1-4fc2-4d7d-89ec-ada726967c78.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="5" clock="05:25" quarter="2" team="BAL">
+      <score type="fieldgoal" clock="03:31" quarter="2" points="3">
+        <summary>
+          <![CDATA[9-J.Tucker 43 yards Field Goal is Good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/96cffc1f-6c80-442c-a676-ed2f58fe1a66.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="6" clock="02:13" quarter="2" team="BAL">
+      <score type="touchdown" clock=":39" quarter="2" points="6">
+        <summary>
+          <![CDATA[35-A.Allen runs 2 yards for a touchdown.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/b9b7147e-2616-494d-808a-2a6b9cdcb0da.xml" type="application/xml"/>
+        </links>
+      </score>
+      <score type="extrapoint" clock=":34" quarter="2" points="1">
+        <summary>
+          <![CDATA[9-J.Tucker extra point is good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/70c7351d-26d2-48df-932f-6d2384cb5426.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="7" clock=":34" quarter="2" team="TB">
+      <score type="touchdown" clock=":13" quarter="2" points="6">
+        <summary>
+          <![CDATA[7-C.Henry punts 0 yards from TB 11 blocked by 28-B.Trawick. 15-L.Williams runs no gain for a touchdown.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/93c13d99-377b-483f-8493-85025d305a9f.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="8" clock=":09" quarter="2" team="BAL">
+      <score type="extrapoint" clock=":09" quarter="2" points="1">
+        <summary>
+          <![CDATA[9-J.Tucker extra point is good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/9c383d0f-45e9-43e0-8554-aa245cac27fd.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="9" clock=":00" quarter="3" team="BAL">
+      <score type="touchdown" clock="11:19" quarter="3" points="6">
+        <summary>
+          <![CDATA[2-T.Taylor complete to 15-L.Williams. 15-L.Williams runs 21 yards for a touchdown.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/7e8b6f3c-7fca-47b9-bebc-aa3f421cc056.xml" type="application/xml"/>
+        </links>
+      </score>
+      <score type="extrapoint" clock="11:09" quarter="3" points="1">
+        <summary>
+          <![CDATA[9-J.Tucker extra point is good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/e8b58d56-8457-4642-b3f4-88caa085a47a.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="10" clock="05:44" quarter="3" team="TB">
+      <score type="fieldgoal" clock=":29" quarter="3" points="3">
+        <summary>
+          <![CDATA[3-D.Dimke 45 yards Field Goal is Good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/9604aaa1-d7db-4f41-9968-453394980cdc.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="11" clock="14:20" quarter="4" team="BAL">
+      <score type="fieldgoal" clock="12:47" quarter="4" points="3">
+        <summary>
+          <![CDATA[9-J.Tucker 29 yards Field Goal is Good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/f519e8fa-be65-48ae-b690-f8eadca2f1d4.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="12" clock="11:00" quarter="4" team="BAL">
+      <score type="touchdown" clock="08:10" quarter="4" points="6">
+        <summary>
+          <![CDATA[2-T.Taylor complete to 13-A.Mellette. 13-A.Mellette runs 21 yards for a touchdown.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/fc626c16-4140-47d2-9284-7052ebe38f7d.xml" type="application/xml"/>
+        </links>
+      </score>
+      <score type="extrapoint" clock="08:02" quarter="4" points="1">
+        <summary>
+          <![CDATA[9-J.Tucker extra point is good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/ed8044ea-d032-4844-9b3a-419dc33eafef.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+    <drive sequence="13" clock="06:30" quarter="4" team="BAL">
+      <score type="fieldgoal" clock="01:54" quarter="4" points="3">
+        <summary>
+          <![CDATA[9-J.Tucker 57 yards Field Goal is Good.]]>
+        </summary>
+        <links>
+          <link rel="summary" href="/2013/PRE/1/BAL/TB/plays/1761a560-4671-422a-8e31-431cf42d4463.xml" type="application/xml"/>
+        </links>
+      </score>
+    </drive>
+  </scoring_drives>
+</game>
