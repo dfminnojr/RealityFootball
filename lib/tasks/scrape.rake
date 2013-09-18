@@ -83,7 +83,7 @@ namespace :scrape do
         if(game.questions == [])
           false
         else
-          @q = game.questions[i]
+          @q = game.questions[0]
           wags = @q.wagers
           wags.each do |wager|
             if wager.response == @q.correct_answer
